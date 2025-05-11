@@ -1,18 +1,20 @@
 {
-  "name": "backend",
+  "name": "juegotrivia-backend",
   "version": "1.0.0",
-  "description": "Backend para el juego de trivia",
-  "main": "server.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.5.0",
     "express": "^4.21.2",
-    "mongoose": "^6.13.8",
-    "openai": "^4.98.0"
+    "mongoose": "^7.8.7",
+    "openai": "^4.30.0"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
